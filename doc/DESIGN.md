@@ -50,6 +50,11 @@ a
 
 
 ### Data Structures
+* *Mapfile*
+    * ProcessedFiles
+    * CurrentFile
+    * Offset
+
 * *Bookmark*
   * href (url)
   * added (date)
@@ -63,6 +68,12 @@ a
 
 
 ### Use Cases
+
+A file is `processed` until all its bookmarks are read and categorized.
+If the process is interrupted, write a file describing the status.
+Upon running the script, check if there is a status file.
+Proceed from where it left off the previous session.
+
 
 new bookmarks, one category
 Chromium (doesn't support tags)

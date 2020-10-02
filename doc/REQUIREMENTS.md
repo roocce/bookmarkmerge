@@ -1,9 +1,9 @@
 # Bookmark Merge Requirements
 
 run with the command:
-`bookmarkmerge.py input='path/to/file/or/folder' output='path/to/file/or/folder'`
+`bookmarkmerge.py --input-folder='path/to/file/or/folder' [--output-folder='path/to/file/or/folder']`
 
-1. Scan unprocessed input file (or files in folder).
+1. Scan unprocessed input files in folder.
   1. Extract the bookmark data (i.e. url, title, tags and folder structure).
   2. Compare it with previously saved bookmark data.
   3. Save unique urls directly (benchmark RAM vs HDD).
